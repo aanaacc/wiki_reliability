@@ -23,7 +23,7 @@ Naive Bayes was selected because it establishes a good baseline as to how learna
 Unreliable Sources:
 ![unreliable sources ROC]({{ "/assets/unreliablesources_roc_curve.png" | relative_url }})
 ![unreliable sources Precision/Recall]({{ "/assets/unreliablesources_precision_recall_curve.png" | relative_url }})
-![unreliable sources Confusion Matrix]({{ "/assets/unreliablesources_confusino_matrix.png" | relative_url }})
+![unreliable sources Confusion Matrix]({{ "/assets/unreliablesources_confusion_matrix.png" | relative_url }})
 
 More Citations Needed:
 ![more citations ROC]({{ "/assets/morecitations_roc_curve.png" | relative_url }})
@@ -38,15 +38,16 @@ Hoax:
 
 
 ### Quantitative Metrics
-* Balanced Accuracy: high ratio of true positives to false positives and negative, ideally >0.7
-* F1 score: match or improve existing methods with accuracy ranging from 0.6-0.7 [^2] [^3]
-* Area Under the ROC Curve: >0.7
+Hoax Metrics:
+* F1 Score = 0.429
+* Balanced Accuracy = 0.383
+* Area Under ROC Curve = 0.3459
 
 ### Analysis of Naive Bayes
-The model is expected to at least match or improve the accuracy of previous work. The dataset used is reliable and complete, so we expect a high F1 score and area under the ROC curve, which would characterize a successful Wikipedia article reliability classification.
+N/A
 
 ### Next Steps
-{% include youtubePlayer.html id=page.youtubeId %}
+N/A
 
 [^1]: K. Wong, M. Redi, and D. Saez-Trumper, “Wiki-Reliability: A large scale dataset for content reliability on Wikipedia,” Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Jul. 2021. doi:10.1145/3404835.3463253
 
@@ -61,11 +62,11 @@ The model is expected to at least match or improve the accuracy of previous work
 
 | Name                 | Contribution |
 | ------------------------ | ------ |
-| [Ana Silva Carvalho](#)            | ML Algorithms, Dataset Description/Link, Slideshow, GitHub Site     |
-| [Remy Bondurant](#)            | Problem Definition and Motivation   |
-| [Or Yoked](#)          | Literature Review, Quantitative Metrics   |
-| [James White](#)         | Project Goals, Citations, Recording Slides  |
-| [Swarna Shah](#)         | Preprocessing Methods, Expected Outcomes  |
+| [Ana Silva Carvalho](#)            | ML Algorithms/Model, GitHub Site     |
+| [Remy Bondurant](#)            | Data Preprocessing  |
+| [Or Yoked](#)          | Visualizations, Next Steps, Gantt Chart   |
+| [James White](#)         | Data Preprocessing  |
+| [Swarna Shah](#)         | Quantitative Methods, Analysis of ML Algorithms/Models  |
 
 ## References
 
