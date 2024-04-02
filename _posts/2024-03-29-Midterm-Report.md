@@ -20,8 +20,8 @@ Naive Bayes was selected because it establishes a good baseline as to how learna
 
 ## Results and Discussion
 ### Visualizations
+Unreliable Sources:
 ![unreliable sources ROC]({{ "/assets/unreliablesources_roc_curve.png" | relative_url }})
-
 ![unreliable sources Precision/Recall]({{ "/assets/unreliablesources_precision_recall_curve.png" | relative_url }})
 
 ### Quantitative Metrics
