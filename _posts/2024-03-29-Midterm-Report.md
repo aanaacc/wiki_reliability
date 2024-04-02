@@ -12,16 +12,11 @@ The reliability of Wikipedia articles are hindered by deliberate spreading of mi
 
 ## Methods
 ### Data Preprocessing
-* Remove duplicate data points - remove articles belonging to multiple templates. sklearn.model_selection.GroupKFold will remove revisions of the same article
-* TF-IDF to process raw text data (sklearn.feature_extraction.text.TfidfTransformer) - converts raw text into numerical features based on word occurrence frequency
-* Word embedding (Word2vec) - processes text data to include semantic relationships between words
-
-
+For data preprocessing, we implemented tf-idf on three different Wikipedia editor templates (hoax, more_citations_needed, and unreliable_sources. Before tf-idf, each csv was lemmatized. See tfidf_vectorizer.py, data_preprocessor.py and groundtruth.py for tfidf implementation and general data clean up. 
 
 ### ML Algorithms/Models
-1. Random Forest Classifier: uses multiple decision trees to offset bias and overfitting seen in single decision trees
-2. Gradient Boosted Trees: combines weak learners so that the next tree corrects errors of previous trees
-3. Naive Bayes: assumes features are conditionally independent, high processing speed
+A Multinomial Naive Bayes was implemented as our first model. We used the vectorized version of all the Wikipedia articles tagged for each template in order to predict whether it was marked as reliable or not. Therefore, Naive Bayes was run three times on an 80/20 data split for each group of articles. See nb.py for Naive Bayes implementation and test/training data split. 
+Naive Bayes was selected because
 
 ## (Potential) Results and Discussion
 ### Quantitative Methods
