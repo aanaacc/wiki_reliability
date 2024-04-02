@@ -16,23 +16,24 @@ For data preprocessing, we implemented tf-idf on three different Wikipedia edito
 
 ### ML Algorithms/Models
 A Multinomial Naive Bayes was implemented as our first model. We used the vectorized version of all the Wikipedia articles tagged for each template in order to predict whether it was marked as reliable or not. Therefore, Naive Bayes was run three times on an 80/20 data split for each group of articles. See nb.py for Naive Bayes implementation and test/training data split. 
-Naive Bayes was selected because
+Naive Bayes was selected because it establishes a good baseline as to how learnable the task is. It is also quite simple and inexpensive, making it a good first algorithm to run. 
 
-## (Potential) Results and Discussion
-### Quantitative Methods
-* F1 Score - balance of precision and recall
-* Balanced Accuracy -  mean of sensitivity and specificity that considers the class imbalance of the dataset
-* Area Under the ROC Curve - measures the model’s ability to discriminate between classes
+## Results and Discussion
+### Visualizations
+Unreliable sources ROC:
+![unreliable sources ROC](/assets/images/unreliable_resources_roc_curve.jpg)
+Unreliable sources Precision/Recall:
+![unreliable sources Precision/Recall](/assets/images/unreliable_sources_precision_recall_curve.jpg)
 
-### Project Goals
+### Quantitative Metrics
 * Balanced Accuracy: high ratio of true positives to false positives and negative, ideally >0.7
 * F1 score: match or improve existing methods with accuracy ranging from 0.6-0.7 [^2] [^3]
 * Area Under the ROC Curve: >0.7
 
-### Expected Results
+### Analysis of Naive Bayes
 The model is expected to at least match or improve the accuracy of previous work. The dataset used is reliable and complete, so we expect a high F1 score and area under the ROC curve, which would characterize a successful Wikipedia article reliability classification.
 
-## Video
+### Next Steps
 {% include youtubePlayer.html id=page.youtubeId %}
 
 [^1]: K. Wong, M. Redi, and D. Saez-Trumper, “Wiki-Reliability: A large scale dataset for content reliability on Wikipedia,” Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Jul. 2021. doi:10.1145/3404835.3463253
