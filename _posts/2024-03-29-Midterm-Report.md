@@ -20,11 +20,8 @@ Naive Bayes was selected because it establishes a good baseline as to how learna
 
 ## Results and Discussion
 ### Visualizations
-Unreliable sources ROC:
-![unreliable sources ROC]({{ "./assets/unreliable_resources_roc_curve.png" | relative_url }})
-![unreliable sources ROC](./assets/unreliable_resources_roc_curve.png)
-Unreliable sources Precision/Recall:
-![unreliable sources Precision/Recall](./assets/unreliable_sources_precision_recall_curve.png)
+![unreliable sources ROC]({{ "/assets/unreliableresources_roc_curve.png" | relative_url }})
+![unreliable sources Precision/Recall]({{ "/assets/unreliablesources_precision_recall_curve.png" | relative_url }})
 
 ### Quantitative Metrics
 * Balanced Accuracy: high ratio of true positives to false positives and negative, ideally >0.7
