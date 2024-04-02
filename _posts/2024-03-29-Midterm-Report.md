@@ -23,6 +23,19 @@ Naive Bayes was selected because it establishes a good baseline as to how learna
 Unreliable Sources:
 ![unreliable sources ROC]({{ "/assets/unreliablesources_roc_curve.png" | relative_url }})
 ![unreliable sources Precision/Recall]({{ "/assets/unreliablesources_precision_recall_curve.png" | relative_url }})
+![unreliable sources Confusion Matrix]({{ "/assets/unreliablesources_confusino_matrix.png" | relative_url }})
+
+More Citations Needed:
+![more citations ROC]({{ "/assets/morecitations_roc_curve.png" | relative_url }})
+![more citations Precision/Recall]({{ "/assets/morecitations_precision_recall_curve.png" | relative_url }})
+![more citations Confusion Matrix]({{ "/assets/morecitations_confusion_matrix.png" | relative_url }})
+
+Hoax:
+![hoax ROC]({{ "/assets/hoax_roc_curve.png" | relative_url }})
+![hoax Precision/Recall]({{ "/assets/hoax_precision_recall_curve.png" | relative_url }})
+![hoax Confusion Matrix]({{ "/assets/hoax_confusion_matrix.png" | relative_url }})
+
+
 
 ### Quantitative Metrics
 * Balanced Accuracy: high ratio of true positives to false positives and negative, ideally >0.7
