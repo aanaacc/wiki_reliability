@@ -39,9 +39,9 @@ Hoax:
 
 ### Quantitative Metrics
 Hoax Metrics:
-* F1 Score = 0.429
-* Balanced Accuracy = 0.383
-* Area Under ROC Curve = 0.3459
+* F1 Score = 0.4391
+* Balanced Accuracy = 0.3746
+* Area Under ROC Curve = 0.3280
 * All three metrics are much lower than our goal of around 0.7. The model has low precision and recall as shown by the low F1 score, low classification accuracy as the low balanced accuracy indicates, and the low AUC score meaning the model performs similarly to a random classifier. 
 
 ### Analysis of Naive Bayes
