@@ -23,7 +23,7 @@ Naive Bayes was selected because it establishes a good baseline as to how learna
 Random Forest was the second model implemented. It consisted of the same preprocessed data and test/train split mentioned before. See ___.py for the Random Forest implementation. Random Forest was chosen because it is known to offset bias and overfitting often found in singular decision trees. 
 Lastly, the third model that was implemented was a Convolutional Neural Network. ADD MORE HERE
 
-## Results and Discussion
+## Results and Discussion: Visualizations
 
 ### Naive Bayes Visualizations
 {% include slider.html selector="slider1" %}
@@ -32,17 +32,50 @@ Lastly, the third model that was implemented was a Convolutional Neural Network.
 {% include slider.html selector="slider2" %}
 
 ### CNN Visualizations
-{% include slider.html selector="slider1" %}
 
-### Quantitative Metrics
+## Results and Discussion: Quantitative Metrics
+
+### Naive Bayes
 Hoax Metrics:
 * F1 Score = 0.4391
 * Balanced Accuracy = 0.3746
 * Area Under ROC Curve = 0.3280
-* All three metrics are much lower than our goal of around 0.7. The model has low precision and recall as shown by the low F1 score, low classification accuracy as the low balanced accuracy indicates, and the low AUC score meaning the model performs similarly to a random classifier. 
+* All three metrics are much lower than our goal of around 0.7. The model has low precision and recall as shown by the low F1 score, low classification accuracy as the low balanced accuracy indicates, and the low AUC score meaning the model performs similarly to a random classifier.
 
-### Analysis of Naive Bayes
+### Random Forest
+Hoax Metrics:
+* Scores Mean = 0.2936
+* F1 Score = 0.287215411558669
+* Balanced Accuracy Score = 0.2674886960137207
+* Area Under the ROC Curve = 0.19587729327997508
+
+More Citations Metrics:
+* Scores Mean = 0.2784
+* F1 Score = 0.2092
+* Balanced Accuracy Score = 0.2078
+* Area Under the ROC Curve = 0.1378
+
+Unreliable Sources Metrics:
+* Scores Mean = 0.3066
+* F1 Score = 0.2893
+* Balanced Accuracy Score = 0.2650
+* Area Under the ROC Curve = 0.2016
+
+### CNN
+
+
+## Results and Discussion: Analysis of Models
+
+## Naive Bayes
 The accuracy of the Naive Bayes model was 37.38%. One possible reason that the model performed poorly could be the lack of sufficient training data. The smallest data set, hoax, only contained about 2700 tokens after running TF-IDF which may not be enough for Naive Bayes to correctly find correlations in the data for accurate classification. Another reason may be that our chosen preprocessing method, TF-IDF, does not include any semantic relationships in the text which could improve the classification accuracy.
+
+## Random Forest
+The average accuracy of the random forest model was about 24.6%, which is significantly lower than 50%, the accuracy of a random classifier. The confusion matrices indicated many more false positives and false negatives than correct classifications, which is also shown by the low F1 score, balanced accuracy score, and AUC. All of the quantitative metrics used were much lower than we anticipated. The poor performance may be because the data was too sparse to use Random Forest. Another possibility is that this method cannot include any semantic nuances in the classification, which could have potentially improved the classification accuracy.
+
+## CNN
+
+### Results and Discussion: Comparisons of Models
+Each of the models used presented different challenges and results with regards to the data. Naive bayes and random forest both performed similarly with accuracies around as low as 20%. CNN performed “better” but still came out to an accuracy of about 51%. Looking at these accuracies it is clear that the model did not learn anything from the given data. The CNN model is almost as accurate as flipping a coin, and naive bayes and random forest are even less accurate. There are many points of failure in our methodology that could have led to this outcome. One possibility is that there is an error in the way the data was preprocessed, either during the cleaning phase or the TF-IDF phase. Another possibility is that the algorithm used to turn the data from text to numbers was not useful for this specific situation. We used TF-IDF but there is a chance that another algorithm would have organized the data in a way that would have allowed our models to learn a pattern from the data. Finally, it is possible that trying to classify Wikipedia articles based on the text within is not a problem that can be learned by relatively simple algorithms such as the ones used in this project.
 
 ### Next Steps
 In regards to improving our classification of the three templates, hoax, more citations needed, unreliable sources, we want to fine tune our Naive Bayes algorithm such as changing parameters or experimenting with different variations of the method. The goal is to raise the accuracy score and ROC AUC so it will be around 0.7 for both. However, it seems there is not enough training data to find patterns based on the tf-idf method, which generated around 27000 tokens for the hoax and more citations needed templates and only 14000 for the unreliable sources template, so we will need to consider other ways to achieve more diverse training data. In addition to enhancing our current method, our next step is implementing a Random Forest algorithm as well as a Gradient Boosted Trees. These may be more fitting for the classification due to handling more complex relationships in the data compared to Naive Bayes. In addition, we might want to explore CNN as it may yield better results for this type of task, but it will require a larger dataset for training in order to capture hierarchical relationships.
