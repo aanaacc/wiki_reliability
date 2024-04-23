@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+  <head>
+    {% include slider_styles.html %}
+  </head>
+  
   {%- include head.html -%}
-
+  {% include slider_scripts.html %}
   <body>
 
     {%- include header.html -%}
@@ -14,7 +17,6 @@
     </main>
 
     {%- include footer.html -%}
-    {%- include slider_scripts.html -%}
   </body>
 
 </html>
