@@ -44,9 +44,9 @@ Lastly, the third model that was implemented was a Convolutional Neural Network.
 ### Random Forest
 Hoax Metrics:
 * Scores Mean = 0.2936
-* F1 Score = 0.287215411558669
-* Balanced Accuracy Score = 0.2674886960137207
-* Area Under the ROC Curve = 0.19587729327997508
+* F1 Score = 0.2872
+* Balanced Accuracy Score = 0.2675
+* Area Under the ROC Curve = 0.1959
 
 More Citations Metrics:
 * Scores Mean = 0.2784
