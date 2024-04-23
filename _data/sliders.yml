@@ -8,6 +8,18 @@
       alt: hoax precision recall curve
     - data-src: /assets/hoax_roc_curve.png
       alt: hoax roc curve
+    - src: /assets/morecitations_confusion_matrix.png
+      alt: more citations confusion matrix
+    - data-src: /assets/morecitations_precision_recall_curve.png
+      alt: more citations precision recall curve
+    - data-src: /assets/morecitations_roc_curve.png
+      alt: more citations roc curve
+    - src: /assets/unreliablesources_confusion_matrix.png
+      alt: unreliable sources confusion matrix
+    - data-src: /assets/unreliablesources_precision_recall_curve.png
+      alt: unreliable sources precision recall curve
+    - data-src: /assets/unreliablesources_roc_curve.png
+      alt: unreliable sources roc curve
   settings:
     height: 500
     initialHeight:
