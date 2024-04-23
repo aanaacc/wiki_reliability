@@ -66,19 +66,19 @@ Unreliable Sources Metrics:
 
 ## Results and Discussion: Analysis of Models
 
-## Naive Bayes
+### Naive Bayes
 The accuracy of the Naive Bayes model was 37.38%. One possible reason that the model performed poorly could be the lack of sufficient training data. The smallest data set, hoax, only contained about 2700 tokens after running TF-IDF which may not be enough for Naive Bayes to correctly find correlations in the data for accurate classification. Another reason may be that our chosen preprocessing method, TF-IDF, does not include any semantic relationships in the text which could improve the classification accuracy.
 
-## Random Forest
+### Random Forest
 The average accuracy of the random forest model was about 24.6%, which is significantly lower than 50%, the accuracy of a random classifier. The confusion matrices indicated many more false positives and false negatives than correct classifications, which is also shown by the low F1 score, balanced accuracy score, and AUC. All of the quantitative metrics used were much lower than we anticipated. The poor performance may be because the data was too sparse to use Random Forest. Another possibility is that this method cannot include any semantic nuances in the classification, which could have potentially improved the classification accuracy.
 
-## CNN
+### CNN
 
-### Results and Discussion: Comparisons of Models
+## Results and Discussion: Comparisons of Models
 Each of the models used presented different challenges and results with regards to the data. Naive bayes and random forest both performed similarly with accuracies around as low as 20%. CNN performed “better” but still came out to an accuracy of about 51%. Looking at these accuracies it is clear that the model did not learn anything from the given data. The CNN model is almost as accurate as flipping a coin, and naive bayes and random forest are even less accurate. There are many points of failure in our methodology that could have led to this outcome. One possibility is that there is an error in the way the data was preprocessed, either during the cleaning phase or the TF-IDF phase. Another possibility is that the algorithm used to turn the data from text to numbers was not useful for this specific situation. We used TF-IDF but there is a chance that another algorithm would have organized the data in a way that would have allowed our models to learn a pattern from the data. Finally, it is possible that trying to classify Wikipedia articles based on the text within is not a problem that can be learned by relatively simple algorithms such as the ones used in this project.
 
-### Next Steps
-In regards to improving our classification of the three templates, hoax, more citations needed, unreliable sources, we want to fine tune our Naive Bayes algorithm such as changing parameters or experimenting with different variations of the method. The goal is to raise the accuracy score and ROC AUC so it will be around 0.7 for both. However, it seems there is not enough training data to find patterns based on the tf-idf method, which generated around 27000 tokens for the hoax and more citations needed templates and only 14000 for the unreliable sources template, so we will need to consider other ways to achieve more diverse training data. In addition to enhancing our current method, our next step is implementing a Random Forest algorithm as well as a Gradient Boosted Trees. These may be more fitting for the classification due to handling more complex relationships in the data compared to Naive Bayes. In addition, we might want to explore CNN as it may yield better results for this type of task, but it will require a larger dataset for training in order to capture hierarchical relationships.
+## Next Steps
+The next step in this project would be to try to improve the model accuracy by using a different preprocessing method than TF-IDF. One option is to use a method that includes semantic relationships between words instead of just the occurrence frequency of each word, which may improve the model’s ability to learn the data. We would test that method using CNN since out of the three models that we used, CNN had the best performance. We could also choose another model to train the data on, since fine tuning the parameters of each model has not been successful.
 
 [^1]: K. Wong, M. Redi, and D. Saez-Trumper, “Wiki-Reliability: A large scale dataset for content reliability on Wikipedia,” Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Jul. 2021. doi:10.1145/3404835.3463253
 
