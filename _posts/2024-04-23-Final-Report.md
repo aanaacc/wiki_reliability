@@ -2,6 +2,7 @@
 layout: post
 image_sliders:
   - slider1
+  - slider2
 ---
 ## Introduction/Background
 Wikipedia is a common source of information that can be accessed around the world, so it’s crucial that accuracy and reliability is maintained. Currently, the Wikipedia community relies on editors to manually classify the quality of articles, however, one study proposes automatically assessing quality using gradient boosted trees. The method incorporates a features set to demonstrate the effectiveness in classifying the reliability of Wikipedia content and simplifying the moderation process [^3]. Another study tests an end-to-end learning method that doesn’t rely on manual feature engineering and utilizes Recurrent Neural Networks, which revealed higher performance in evaluating articles across multiple languages [^2]. These approaches highlight that ML techniques offer more efficient and accurate solutions to determining the reliability of Wikipedia content. To expand on current advancements, our project aims to classify articles based on citations and deliberate misinformation. The dataset used in this project consists of three different template files used by Wikipedia editors to flag for possibly unreliable content: hoax, more citations needed, unreliable sources. For each template, feature has_template will be used as the ground truth [^1].
