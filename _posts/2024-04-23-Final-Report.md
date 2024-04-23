@@ -21,10 +21,6 @@ Random Forest was the second model implemented. It consisted of the same preproc
 Lastly, the third model that was implemented was a Convolutional Neural Network. ADD MORE HERE
 
 ## Results and Discussion
-{% include carousel.html height="50" unit="%" duration="7" number="1" %}
-
-{% include carousel.html height="50" unit="%" duration="7" number="2" %}
-
 carousels:
   - images: 
     - image: /assets/unreliablesources_roc_curve.png
