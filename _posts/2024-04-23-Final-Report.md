@@ -36,7 +36,6 @@ Lastly, the third model that was implemented was a Convolutional Neural Network.
 ## Results and Discussion: Quantitative Metrics
 
 ### Naive Bayes
-Hoax Metrics:
 * F1 Score = 0.4391
 * Balanced Accuracy = 0.3746
 * Area Under ROC Curve = 0.3280
@@ -93,11 +92,11 @@ The next step in this project would be to try to improve the model accuracy by u
 
 | Name                 | Contribution |
 | ------------------------ | ------ |
-| [Ana Silva Carvalho](#)            | ML Algorithms/Model, GitHub Site     |
-| [Remy Bondurant](#)            | Data Preprocessing  |
-| [Or Yoked](#)          | Visualizations, Next Steps, Gantt Chart   |
-| [James White](#)         | Data Preprocessing  |
-| [Swarna Shah](#)         | Quantitative Methods, Analysis of ML Algorithms/Models  |
+| [Ana Silva Carvalho](#)            | ML Algorithms/Model, GitHub Site, Slide Deck     |
+| [Remy Bondurant](#)            | Data Preprocessing, Comparisons   |
+| [Or Yoked](#)          | Visualizations, Gantt Chart, Quantitative Methods, Video   |
+| [James White](#)         | Data Preprocessing, ML Algorithms/Model, Metrics  |
+| [Swarna Shah](#)         | Quantitative Methods, Analysis of ML Algorithms/Models, Next Steps  |
 
 ## References
 
