@@ -24,6 +24,17 @@ Lastly, the third model that was implemented was a Convolutional Neural Network.
 {% include carousel.html height="50" unit="%" duration="7" number="1" %}
 
 {% include carousel.html height="50" unit="%" duration="7" number="2" %}
+
+carousels:
+  - images: 
+    - image: /assets/unreliablesources_roc_curve.png
+    - image: /assets/unreliablesources_precision_recall_curve.png
+    - image: /assets/unreliablesources_confusion_matrix.png
+  - images: 
+    - image: /assets/morecitations_roc_curve.png
+    - image: /assets/morecitations_precision_recall_curve.png
+    - image: /assets/morecitations_confusion_matrix.png
+
 ### Visualizations
 Unreliable Sources:
 ![unreliable sources ROC]({{ "/assets/unreliablesources_roc_curve.png" | relative_url }})
