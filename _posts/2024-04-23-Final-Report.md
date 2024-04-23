@@ -20,8 +20,8 @@ For data preprocessing, we implemented tf-idf on three different Wikipedia edito
 ### ML Algorithms/Models
 A Multinomial Naive Bayes was implemented as our first model. We used the vectorized version of all the Wikipedia articles tagged for each template in order to predict whether it was marked as reliable or not. Therefore, Naive Bayes was run three times on an 80/20 data split for each group of articles. See nb.py for Naive Bayes implementation and test/training data split. 
 Naive Bayes was selected because it establishes a good baseline as to how learnable the task is. It is also quite simple and inexpensive, making it a good first algorithm to run. 
-Random Forest was the second model implemented. It consisted of the same preprocessed data and test/train split mentioned before. See ___.py for the Random Forest implementation. Random Forest was chosen because it is known to offset bias and overfitting often found in singular decision trees. 
-Lastly, the third model that was implemented was a Convolutional Neural Network. ADD MORE HERE
+Random Forest was the second model implemented. It consisted of the same preprocessed data and test/train split mentioned before. See CNN.py for the Random Forest implementation. Random Forest was chosen because it is known to offset bias and overfitting often found in singular decision trees. 
+Lastly, the third model that was implemented was a Convolutional Neural Network. CNNs have historically captured semantic features well, which is a contrast to the two other models we have implemented so far.
 
 ## Results and Discussion: Visualizations
 
