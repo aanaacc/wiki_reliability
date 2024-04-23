@@ -31,6 +31,9 @@ carousels:
     - image: /assets/morecitations_precision_recall_curve.png
     - image: /assets/morecitations_confusion_matrix.png
 
+{% include carousel.html height="50" unit="%" duration="7" number="1" %}
+{% include carousel.html height="50" unit="%" duration="7" number="2" %}
+
 ### Visualizations
 Unreliable Sources:
 ![unreliable sources ROC]({{ "/assets/unreliablesources_roc_curve.png" | relative_url }})
