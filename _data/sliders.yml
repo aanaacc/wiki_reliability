@@ -21,7 +21,7 @@
     - data-src: /assets/unreliablesources_roc_curve.png
       alt: unreliable sources roc curve
   settings:
-    height: 500
+    height: "'auto'"
     initialHeight:
     maxHeight:
     interval:
@@ -36,17 +36,24 @@
   bullets: true
   captions: true
   images:
-    - src: /img/1.jpg
-      title: Balloons!
-      alt: This slider has caption titles
-    - data-src: /img/2.jpg
-      title: This slider uses the fade effect
-      alt: Instead of the default slide effect
-    - data-src: /img/3.jpg
-      data-src-2x: /img/3@2x.jpg
-    - src: /img/4.jpg
-      title: Last image had no caption!
-      alt: Also, this image has no link
+    - src: /assets/rf/hoax_confusion_matrix.png
+      alt: hoax confusion matrix
+    - data-src: /assets/rf/hoax_precision_recall_curve.png
+      alt: hoax precision recall curve
+    - data-src: /assets/rf/hoax_roc_curve.png
+      alt: hoax roc curve
+    - src: /assets/rf/morecitations_confusion_matrix.png
+      alt: more citations confusion matrix
+    - data-src: /assets/rf/morecitations_precision_recall_curve.png
+      alt: more citations precision recall curve
+    - data-src: /assets/rf/morecitations_roc_curve.png
+      alt: more citations roc curve
+    - src: /assets/rf/unreliablesources_confusion_matrix.png
+      alt: unreliable sources confusion matrix
+    - data-src: /assets/rf/unreliablesources_precision_recall_curve.png
+      alt: unreliable sources precision recall curve
+    - data-src: /assets/rf/unreliablesources_roc_curve.png
+      alt: unreliable sources roc curve
   settings:
     height: "'auto'"
     effect: "'fade'"
