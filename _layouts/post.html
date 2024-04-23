@@ -33,6 +33,9 @@ layout: base
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
-
+  
+  {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
+  
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
