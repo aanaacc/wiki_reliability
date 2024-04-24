@@ -59,6 +59,8 @@
     effect:
 
 - selector: slider3
+  bullets: true
+  captions: true
   images:
     - src: /assets/cnn/hoax_confusion_matrix.png
       alt: hoax confusion matrix
