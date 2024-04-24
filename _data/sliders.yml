@@ -56,18 +56,27 @@
       alt: unreliable sources roc curve
   settings:
     height: "'auto'"
-    effect: "'fade'"
+    effect:
 
 - selector: slider3
   images:
-    - src: /img/1.jpg
-      alt: image one
-    - src: /img/2.jpg
-      alt: image two
-    - src: /img/3.jpg
-      alt: image three
-    - src: /img/4.jpg
-      alt: image four
+    - src: /assets/cnn/hoax_confusion_matrix.png
+      alt: hoax confusion matrix
+    - data-src: /assets/cnn/hoax_precision_recall_curve.png
+      alt: hoax precision recall curve
+    - data-src: /assets/cnn/hoax_roc_curve.png
+      alt: hoax roc curve
+    - src: /assets/cnn/morecitations_confusion_matrix.png
+      alt: more citations confusion matrix
+    - data-src: /assets/cnn/morecitations_precision_recall_curve.png
+      alt: more citations precision recall curve
+    - data-src: /assets/cnn/morecitations_roc_curve.png
+      alt: more citations roc curve
+    - src: /assets/cnn/unreliablesources_confusion_matrix.png
+      alt: unreliable sources confusion matrix
+    - data-src: /assets/cnn/unreliablesources_precision_recall_curve.png
+      alt: unreliable sources precision recall curve
+    - data-src: /assets/cnn/unreliablesources_roc_curve.png
+      alt: unreliable sources roc curve
   settings:
     height: "'auto'"
-    disableNav: true
