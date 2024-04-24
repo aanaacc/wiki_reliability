@@ -59,7 +59,7 @@
     effect:
 
 - selector: slider3
-  bullets: true
+  bullets: false
   captions: true
   images:
     - src: /assets/cnn/hoax_confusion_matrix.png
